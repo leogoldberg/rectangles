@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'RectanglesController@index');
+
+Route::resource('rectangles', 'RectanglesController');

@@ -15,9 +15,12 @@ class CreateRectanglesTable extends Migration
     {
         Schema::create('rectangles', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('width');
-            $table->string('height');
+            $table->integer('width');
+            $table->integer('height');
             $table->string('color');
+            $table->string('shadowColor');
+            $table->string('textColor');
+            $table->integer('shadowBlur');
             $table->timestamps();
         });
     }
